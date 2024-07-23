@@ -123,7 +123,7 @@ def init_git():
 
     git_update()
 
-    app.logger.info("Importing challenges...")
+    app.logger.info("Importing challenges....TEST")
     with open(f"./{challenge_path}/README.md") as f:
         matches = re.findall(r"]\((.*?)\)", f.read())
         for challenge in matches:
